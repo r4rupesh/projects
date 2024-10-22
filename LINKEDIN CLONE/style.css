@@ -1,0 +1,735 @@
+body{
+    font-family: apple-system,
+    system-ui,
+    BlinkMacSystemFont,
+    Segoe UI,Roboto,
+    Helvetica Neue,Fira Sans,
+    Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,
+    Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,Lucida Grande,Helvetica,Arial,sans-serif;
+    background-color:#e1e9ee ;
+}
+
+.main-container{
+   margin: 5rem 5rem;
+   display: flex;
+   justify-content: space-evenly;
+
+ 
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 1px 0px 1px black;
+    
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 3.5rem;
+}
+.logo-img{
+    height: 39px;
+    width: 39px;
+}
+
+
+.search{
+    position: relative;
+    display:flex ;
+    align-items: center;
+}
+.search-box{
+    position: absolute;
+    height: 34px;
+    width: 280px;
+    background-color: #EDF3F8;
+    border-radius:0.3rem ;
+    border: none;
+    transition: width 0.2s ease-in;
+    margin-left:0.5rem ;
+    
+
+}
+.search-box:focus{
+    width: 330px;
+    border:1px solid black;
+
+
+}
+.search-icon{
+     position: absolute;
+     left: 1rem;
+    opacity: 0.7;
+
+    
+}
+
+.search-box:focus + .search-icon {
+    opacity: 1;
+}
+.search-icon:hover{
+    opacity: 1;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-text-container {
+    display: flex;
+    flex-direction: column; /* Stack the icon and text vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: flex-end; /* Align the text at the bottom */
+    margin-top: 0.8rem;
+
+}
+
+.paragraph {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: auto; /* Pushes the paragraph to the bottom */
+    padding-bottom: 3px; /* Fine-tune alignment */
+    opacity: 0.7;
+}
+
+.right-nav-icon {
+    font-size: 1.3rem;
+    color: black;
+    opacity: 0.7;
+}
+.userlogo{
+    height: 22px;
+    width: 22px;
+    opacity: 0.7;
+}
+
+.user{
+    padding-left:1rem ;
+}
+
+.down{
+    padding-left:0.3rem ;
+    align-self: center;
+    opacity: 0.7;
+}
+.right-nav-bar {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Or space-around if you want space on both sides */
+    width: 50%;
+    padding-left:21rem;
+    
+    
+}
+
+.line{
+    border-left:0.5px solid  rgba(0, 0, 0, 0.053);
+}
+
+.paragraph:hover,.right-nav-icon:hover{
+    opacity: 1;
+}
+.userlogo:hover{
+    opacity: 1;
+}
+
+
+
+.right-side-bar{
+    height: 100vh;
+    width: 300px;
+}
+.main-content{
+    height: 100vh;
+    flex: 1;
+    /* background-color:white; */
+}
+.left-side-bar{
+   width: 225px;
+   margin-right: 2rem;
+   
+}
+
+.second-container{
+    display: flex;
+    /* justify-content: space-between; */
+
+    /* background-color: aqua; */
+}
+
+.coverimg{
+    width: 100%;
+    height: 56px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.camera-container{
+    display: flex;
+    background-color:white;
+    height:72px;
+    width: 72px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    translate: 4.3rem -2rem;
+}
+.cameraicon{
+    width: 30px;
+    height: 30px;
+    width: fit-content;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name{
+    margin-top: -1rem;
+}
+.subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.212);
+    padding-bottom: 1rem;
+
+}
+.bio{
+    margin-top: -1rem;
+}
+
+.viewers{
+    padding-left:0.5rem ;
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.212);
+
+
+   
+}
+.anch{
+    text-decoration: none;
+}
+span{
+    padding-left: 7rem;
+    
+}
+.viewers p{
+    cursor: pointer;
+    font-size: 12px;
+    font-size: 12px;
+    
+}
+.viewers p:hover{
+    background-color: #ebf0f3 ;
+}
+.prem{
+    height: 12px;
+    width: 12px;
+    padding-right: 0.4rem;
+    padding-left: 0.2rem;
+
+}
+.gain{
+    padding-left:0.5rem ;
+    cursor: pointer;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.212);
+    
+}
+.gain:hover{
+   background-color:#ebf0f3 ;
+
+}
+.saved-items{
+    padding-left:0.5rem ;
+    cursor: pointer;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    
+}
+.saved-items:hover{
+    background-color: #ebf0f3 ;
+}
+
+.recent{
+    padding-left:0.5rem ;
+}
+li i{
+    font-size: 12px;
+    padding-right: 0.2rem;
+    cursor: pointer;
+}
+.recent ul li {
+    list-style-type:none;
+    display: inline-block;
+    position: relative;
+    right: 2rem;
+    width: 100%;
+    color:rgba(0, 0,0, 0.7)
+}
+.groups ul li {
+    list-style-type:none;
+    display: inline-block;
+    position: relative;
+    right: 2rem;
+    width: 100%;
+    color:rgba(0, 0,0, 0.7)
+}
+.lanchor{
+   color: rgba(0, 0, 0, 0.7);
+   font-weight: 500;
+}
+.lanchor:hover{
+    background-color:  #ebf0f3 ;
+    color:rgba(0, 0,0, 1)
+}
+li:hover{
+   background-color:  #ebf0f3 ;
+   color:rgba(0, 0,0, 1)
+}
+
+label{
+    display: flex;
+}
+
+.groups{
+    padding-left:0.5rem ;
+}
+
+.show{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 0.5rem;
+    padding:0.5rem 0;
+    padding-left: 2rem;
+}
+.show:hover{
+    background-color:  #ebf0f3 ;
+}
+.profile-card{
+    border: 0.1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.events{
+    padding-left:0.5rem ;
+    font-size: 12px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.212);
+    
+
+}
+.events a{
+    text-decoration: none;
+}
+.events p{
+    font-weight: 600;
+}
+.events a:hover{
+    text-decoration: underline;
+}
+
+.eventicon{
+    font-size: 16px;
+    margin-left: 9.5rem;
+    color: black;
+    
+
+}
+.eventicon:hover{
+    font-size: 18px;
+
+}
+.discover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.discover:hover{
+    background-color:  #ebf0f3 ;
+    border-radius: 0.5rem;
+}
+.third-container{
+    margin-top: 0.5rem;
+    border: 0.1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.info{
+    position: relative;
+    left: 7.5rem;
+    height:16px; 
+    width:fit-content;
+    
+}
+.right-side-bar{
+    margin-left: 2rem;
+    
+}
+
+.news{
+    border: 0.1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 1px;
+    padding-left:0.5rem ;
+    width: 280px;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.readers{
+    display: flex;
+     position:relative;
+     right:9.5rem;
+    /* flex-wrap: wrap; */
+    width: 100vh;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height:1px;
+}
+
+.promote-cover{
+    height: 58px;
+    width:103%;
+    position: relative;
+    right: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.company-name{
+    display: flex;
+    border: 1px solid black;
+    height: 72px;
+    width: 72px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #3f3939;
+    position: relative;
+    top:-3rem;
+    left:0.5rem;
+    cursor:pointer;
+}
+.promoted-button{
+    height:1.5rem;
+    width: 6rem;
+    font-size: 12px;
+    border-radius: 0.5rem;
+    position: relative;
+    left: 10.5rem;
+    top: -8rem;
+    cursor: pointer;
+    
+
+}
+button i{
+    font-size: 18px;
+}
+.linear-profile{
+    height: 16px;
+    width: fit-content;
+    position: relative; /* Use relative or absolute positioning */
+    margin-left: -5px;
+
+    
+}
+.promote{
+    height: 275px;
+    border: 0.1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 1px;
+    padding-left:0.5rem ;
+    width: 280px;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-top: 0.5rem;
+
+}
+.promot-linear-profile{
+   
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#other-connection{
+    font-size:12px; 
+    position: relative;
+    left: 0.3rem ;
+    font-weight: 400;
+}
+.follow{
+    width: 90%;
+    height:33px;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    margin: 0;
+    background-color: white;
+
+    
+    
+}
+.follow:hover{
+    border: 2px solid blue;
+    background-color: white;
+    background-color: #EDF3F8;
+    cursor: pointer;
+
+}
+.title-hitachi{
+    font-size: 14px;
+    position: relative;
+    top: -4rem;
+    left: 0.3rem;
+    font-weight: 600;
+}
+.news-heading:hover{
+    background-color: #EDF3F8;
+    cursor: pointer;
+}
+.right-sidebar-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+ 
+
+.right-sidebar-footer a{
+    text-decoration:none;
+    padding:0.5rem;
+    font-size: 12px;
+    opacity: 0.7
+
+}
+.right-sidebar-footer a:hover{
+    text-decoration:underline;
+    opacity:1;
+
+}
+.post-input{
+     padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    height: 48px;
+    width:468px;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.417);
+    /* background-color:#f7f8f9; */
+    opacity: 0.6;
+    font-weight: 500;
+}
+.post-input:hover{
+    opacity: 1;
+    background-color: #e1e9ee42;
+    cursor: pointer;
+}
+.prof-input{
+    display: flex;
+    justify-content:space-evenly;
+}
+.upper-content{
+    width: 555px;
+    height: 116px;
+    padding-left: 1rem;
+    border:0.1px solid rgba(0, 0, 0, 0.212);
+    padding-top: 1rem;
+    border-radius:0.5rem ;
+    /* background-color: white; */
+    background-color: white;
+
+}
+.media-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+.media-button button{
+    font-size: 14px;
+    color:#000000Bf;
+    border: none;
+    background-color:transparent;
+    padding: 1rem;
+    font-weight:500;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+
+    
+}
+.media-button button:hover{
+    background-color: #e1e9ee42;
+    
+    
+}
+.but-icon{
+    padding-right: 0.8rem;
+    width: 20px;
+    height: 16px;
+
+}
+.sort{
+    margin-top: 0.5rem;
+ 
+}
+.middle-line{
+    width: 83%;
+    border: 0.1px solid rgba(0, 0, 0, 0.314);
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    /* margin-top: 0.3; */
+}
+.profile-container{
+    height:  878px;
+    width: 569px;
+    border: 0.1px solid rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 1rem;
+    
+}
+.posts{
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin:1rem 2rem;
+    height: fit-content;
+    width: fit-content;
+    
+    
+}
+.dotbutton{
+    border: none;
+    background-color:transparent;
+    /* justify-self: end; */
+      opacity: 0.7;
+      cursor: pointer;
+      font-size: 20px;
+    
+    
+    
+}
+.dotbutton-container{
+    height: fit-content;
+    border-radius: 50%;
+    padding: 0.4rem;
+    transition: 10ms 0s ease-in;
+    position: relative;
+    right: -20rem;
+    bottom: 0.5rem;
+      
+}
+.dotbutton-container:hover{
+    background-color: #e1e9ee42;
+    cursor: pointer;
+}
+.profile-title{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+.gpost{
+    height:671px ;
+    width:503px ;
+    border-radius: 0.5rem;
+    justify-self: center;
+}
+.post-photo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.post-blog{
+    font-size:14px; 
+    padding-bottom: 1rem ;
+    position: relative; 
+    right: 1rem;
+}
+.react{
+    height: 40px;
+    width: 95%;
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.39);
+    
+
+}
+.reaction {
+    height: 16px;
+    width: fit-content;
+    position: relative; /* Use relative or absolute positioning */
+    margin-left: -5px;
+
+}
+
+.react ul li{
+    font-size: 12px;
+    list-style-type:none;
+    display: inline-block;
+    width: 100%;
+    color:rgba(0, 0,0, 0.7);
+}
+.react ul li img{
+   
+    height: 12px;
+    width: 12px;
+}
+.react ul{
+    display: flex; 
+}
+.like-comment button{
+    font-size: 14px;
+    color:#000000Bf;
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 2rem;
+    font-weight:500;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+.like-comment button:hover{
+    background-color: #e1e9ee42;
+    color: black;
+    font-size: 16px;
+
+}
+.like-comment button i{
+    padding-right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.like-comment{
+ position: relative;
+ bottom: 1.5rem;
+ left: 0.5rem;
+
+}
